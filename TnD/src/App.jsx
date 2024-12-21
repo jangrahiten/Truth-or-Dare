@@ -44,7 +44,7 @@ function App() {
             {output}
           </div>
 
-          <div className="buttons flex gap-5">
+          <div className="buttons flex gap-5 select-none">
             <Button name="TRUTH"  onClick={()=> send_request("truth")}/>
             <Button name="DARE"  onClick={() => send_request("dare")}/>
           </div>
