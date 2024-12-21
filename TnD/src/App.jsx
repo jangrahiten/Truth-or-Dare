@@ -19,7 +19,7 @@ function App() {
 
   const send_request = async (val)=>{
     
-    const response = await axios.post('http://localhost:3000/', {value: val, rating});
+    const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}`, {value: val, rating});
     const data = response.data;
     changeVal(data);
   }
