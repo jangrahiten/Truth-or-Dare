@@ -7,10 +7,21 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Node modules
+TnD/node_modules/
+TnDserver/node_modules/
+
+# Environment variables
+TnD/.env
+TnD/.env.local
+TnD/.env.*.local
+TnDserver/.env
+TnDserver/.env.local
+TnDserver/.env.*.local
+
+# Build output
+TnD/dist/
+TnDserver/dist/
 
 # Editor directories and files
 .vscode/*
